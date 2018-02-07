@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+}
+form{
+	background-color: grey;
+}
+#Formlayout label{
+	float: left;
+    width: 120px;
+    padding-right: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<form name="form" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+  <fieldset>
+    <center><B><H1> Form Registrasi </H1></B></center> <br>
+    <div id= "Formlayout">
+    <label>Nama:</label> <input type="text" name="nama" id="nama" class="p2"> <br><br>
+    <label>Jenis kelamin:</label>  <input type="radio" name="gender" value="lakilaki" id="gender"> Laki-Laki  <input type="radio" name="gender" value="perempuan" id="gender"> Perempuan </p2><br><br>
+    <label>Tgl Lahir:</label>  <input type="date" name="tgllahir"></p2> <br><br>
+    <label>Alamat :</label>  <p1><textarea name="alamat" rows="10" cols="30"> </textarea></p2> <br><br>
+    <input type="submit" value="Submit" style="background:lightblue">
+  </fieldset>
+</form>
+
+</body>
+</html>
